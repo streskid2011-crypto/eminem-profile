@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #3a1c1c;
+    background-image: radial-gradient(#611c1c 20%, transparent 20%), radial-gradient(#1c3a3a 20%, transparent 20%);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+    font-family: 'Permanent Marker', cursive, sans-serif;
+    color: #e6c619;
+    overflow-x: hidden;
+}
+.screen-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.ham-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
+    background: #bd1515;
+    color: #e6c619;
+    border: 3px solid #e6c619;
+    font-size: 24px;
+    padding: 5px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    display: block;
+}
+.sidebar-wrapper {
+    position: absolute;
+    top: 0;
+    left: -280px;
+    width: 260px;
+    height: 100%;
+    background: #7a1515;
+    border-right: 5px dashed #e6c619;
+    z-index: 999;
+    transition: left 0.3s ease;
+    padding: 20px;
+    box-shadow: 5px 0 15px rgba(189,21,21,0.5);
+}
+.sidebar-wrapper.active {
+    left: 0;
+}
+.sidebar-branding {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #e6c619;
+    padding-bottom: 15px;
+}
+.avatar-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    border: 3px solid #15bd9b;
+    background-color: #555;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+.toxic-brand {
+    font-size: 20px;
+    color: #15bd9b;
+    text-shadow: 2px 2px #bd1515;
+    display: block;
+}
+.sidebar-links {
+    display: block;
+}
+.graffiti-link {
+    display: block;
+    color: #e6c619;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    text-shadow: 1px 1px #000;
+}
+.graffiti-link:hover {
+    background: #15bd9b;
+    color: #bd1515;
+    transform: scale(1.05) rotate(-2deg);
+    text-shadow: 2px 2px #e6c619;
+    box-shadow: -4px 4px 0px #e6c619;
+}
+.navbar-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    background: #15bd9b;
+    border-bottom: 5px solid #bd1515;
+    z-index: 900;
+    padding: 10px 20px;
+}
+.navbar-container {
+    display: block;
+    text-align: right;
+    height: 100%;
+}
+.navbar-toxic-text {
+    font-size: 16px;
+    color: #bd1515;
+    text-shadow: 1px 1px #e6c619;
+    margin-right: 15px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 55px;
+}
+.navbar-logo-area {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 55px;
+}
+.navbar-toxic-subtext {
+    font-size: 14px;
+    color: #7a1515;
+    margin-right: 10px;
+    display: inline-block;
+}
+.avatar-circle {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 3px solid #e6c619;
+    background-color: #555;
+    vertical-align: middle;
+    display: inline-block;
+}
+.main-content {
+    display: block;
+    margin-top: 100px;
+    padding: 20px;
+    width: 100%;
+}
+.hero-section {
+    display: block;
+    margin-bottom: 40px;
+}
+.profile-card {
+    display: block;
+    background: #bd1515;
+    border: 5px solid #e6c619;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 8px 8px 0px #15bd9b;
+}
+.profile-avatar-wrapper {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    background-color: #888;
+    border: 4px dashed #15bd9b;
+    border-radius: 8px;
+}
+.profile-info {
+    text-align: center;
+}
+.rapper-name {
+    font-size: 28px;
+    color: #e6c619;
+    text-shadow: 3px 3px #15bd9b;
+    margin-bottom: 5px;
+}
+.rapper-meta {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Rock Salt', cursive;
+}
+.article-section {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(122, 21, 21, 0.9);
+    border: 4px solid #15bd9b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: -10px 10px 0px #e6c619;
+}
+.section-title {
+    font-size: 26px;
+    color: #e6c619;
+    text-shadow: 2px 2px #bd1515;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 4px dotted #15bd9b;
+    padding-bottom: 10px;
+}
+.article-paragraph {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    text-align: justify;
+}
+.main-footer {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background: #bd1515;
+    border-top: 4px solid #e6c619;
+    margin-top: 40px;
+}
+.main-footer p {
+    font-size: 16px;
+    color: #e6c619;
+}
+@media (min-width: 992px) {
+    .ham-btn {
+        display: none;
+    }
+    .sidebar-wrapper {
+        left: 0;
+        width: 280px;
+    }
+    .main-content {
+        margin-left: 300px;
+        width: calc(100% - 320px);
+        margin-top: 100px;
+    }
+    .navbar-top {
+        width: calc(100% - 280px);
+    }
+}
